@@ -3,8 +3,7 @@ import type { H5WasmWorkerAPI } from './h5wasm.worker.ts';
 // @ts-ignore (esbuild-plugin-inline-worker will rewrite this import)
 import DedicatedWorker from './h5wasm.worker.ts';
 
-import { ACCESS_MODES } from 'h5wasm';
-import type { File as H5WasmFile, Group, Dataset, Datatype, BrokenSoftLink } from 'h5wasm';
+import type { File as H5WasmFile, Group, Dataset, Datatype, BrokenSoftLink, ACCESS_MODES } from 'h5wasm';
 export type { H5WasmFile, Group, Dataset, Datatype, BrokenSoftLink };
 
 type ACCESS_MODESTRING = keyof typeof ACCESS_MODES;
