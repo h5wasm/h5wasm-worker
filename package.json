@@ -1,0 +1,14 @@
+{
+  "name": "h5wasm-worker",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "devDependencies": {
+    "comlink": "^4.4.1",
+    "esbuild": "^0.20.1",
+    "esbuild-plugin-inline-worker": "^0.1.1",
+    "h5wasm": "^0.7.2"
+  }
+}
