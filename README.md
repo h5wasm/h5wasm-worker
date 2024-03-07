@@ -1,6 +1,8 @@
 # h5wasm-worker
 
-A package that provides a simple API for interacting with [h5wasm](https://github.com/usnistgov/h5wasm) running in a Web Worker (which allows read/write access to local files without reading the entire contents to memory) 
+A package that loads the [h5wasm](https://github.com/usnistgov/h5wasm) library in a Web Worker, and provides an async API for reading HDF5 files through that Worker.  
+
+Usage of the [Emscripten WORKERFS](https://emscripten.org/docs/api_reference/Filesystem-API.html#filesystem-api-workerfs) virtual filesystem in the Worker enables read/write access to local files selected by the user, without first reading the entire contents to memory.
 
 ## Note that this library is not yet released, and the API is expected to change
 
